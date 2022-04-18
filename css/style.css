@@ -192,7 +192,7 @@ body {
 }
 
 
-/* ! --------------ИМЯ-БЛОКА------------------ */
+/* ! --------------Основные настройки--------- */
 .main {
   min-height: 400vh;
   padding: 50px 0px 100px 0px;
@@ -208,7 +208,7 @@ body {
 
 
 /* ! --------------Кабина Газ-66--------------- */
-.cabine-top{
+.cabine-top {
   height: 0;
   width: 240px;
 
@@ -218,6 +218,65 @@ body {
 
   border-top-right-radius: 30px;
   border-top-left-radius: 150px 50px;
+}
+
+.cabine-top-item {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  width: 200px;
+  height: 22px;
+  background: #26614c;
+  border-top-left-radius: 150px 50px;
+  border-top-right-radius: 30px;
+  box-shadow: 0 0 10px #918d8d inset;
+}
+
+.cabine-top-decore-item1 {
+  position: absolute;
+  top: 23px;
+  left: 210px;
+  width: 25px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #454545;
+  border-top-left-radius: 5px 10px;
+  border-top-right-radius: 10px 100px;
+  box-shadow: 0 0 20px #837f7f;
+}
+.cabine-top-decore-item2 {
+  position: absolute;
+  top: 183px;
+  left: 208px;
+  width: 40px;
+  height: 70px;
+  background: transparent;
+  border: 1px solid #454545;
+  border-right: none;
+  box-shadow: 5px 0 7px #a09e9e inset;
+  z-index: 2;
+}
+
+.cabine-top-decore-item3 {
+  position: absolute;
+  top: 107px;
+  left: 208px;
+  width: 30px;
+  height: 2px;
+  background: #2b2a2a;
+  box-shadow: 0 0 2px #ffffff inset;
+  z-index: 2;
+}
+
+.cabine-top-decore-item4 {
+  position: absolute;
+  top: 270px;
+  left: 208px;
+  width: 40px;
+  height: 2px;
+  background: #2b2a2a;
+  box-shadow: 0 0 2px #ffffff inset;
+  z-index: 2;
 }
 
 .cabine-bottom {
@@ -233,9 +292,51 @@ body {
   border-top-right-radius: 10px 80px;
   border-bottom-right-radius: 10px 10px;
   border-bottom-left-radius: 5px 5px;
-  box-shadow: 0 3px 12px #ffffff inset;
+  box-shadow: 0 4px 5px #b3abab inset;
 }
 
+.cabine-bottom-decore-item1 {
+  position: absolute;
+  top: 160px;
+  left: -52px;
+  width: 80px;
+  height: 6px;
+  background: #454545;
+  box-shadow: 0 0 2px #a7a1a1 inset;
+  z-index: 2;
+}
+
+.cabine-bottom-decore-item2 {
+  position: absolute;
+  top: 240px;
+  left: -52px;
+  width: 80px;
+  height: 6px;
+  background: #454545;
+  box-shadow: 0 0 2px #a7a1a1 inset;
+  z-index: 2;
+}
+
+.cabine-bottom-decore-item3 {
+  position: absolute;
+  top: 160px;
+  left: -7px;
+  width: 4px;
+  height: 160px;
+  background: #454545;
+  box-shadow: 0 0 2px #a7a1a1 inset;
+  z-index: 2;
+}
+.cabine-bottom-decore-item4 {
+  position: absolute;
+  top: 160px;
+  left: -33px;
+  width: 4px;
+  height: 82px;
+  background: #454545;
+  box-shadow: 0 0 2px #a7a1a1 inset;
+  z-index: 2;
+}
 
 /* ! -----------Крыло кабины Газ-66----------- */
 .cabine-wing {
@@ -308,7 +409,7 @@ body {
   width: 103px;
   height: 15px;
 
-  background: #ffffff;
+  background: #def0f8;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 30px;
@@ -323,9 +424,9 @@ body {
   left: 50px;
 
   width: 130px;
-  height: 85px;
+  height: 75px;
 
-  background: #ffffff;
+  background: #def0f8;
   border-top-left-radius: 90px 150px;
   box-shadow: -7px 0 20px 3px rgb(20, 19, 19) inset;
 }
@@ -362,7 +463,7 @@ body {
 .mirror-door-cabine {
   position: absolute;
   top: 95px;
-  left: 260px;
+  left: 335px;
 
   width: 25px;
   height: 65px;
@@ -380,9 +481,9 @@ body {
 .decor-door-cabine {
   position: absolute;
   top: 230px;
-  left: 260px;
+  left: 320px;
 
-  width: 120px;
+  width: 140px;
   height: 75px;
 
   background: transparent;
@@ -392,19 +493,53 @@ body {
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  box-shadow: -8px 0 25px 0 #424040 inset;
+  box-shadow: 0 0 35px 0 #424040, -8px 0 25px 0 #424040 inset;
 }
 
 .cabin-door-handle {
   position: absolute;
   top: 235px;
-  left: 340px;
+  left: 420px;
 
   width: 35px;
   height: 10px;
-  
+
   background: #ffffff;
-  border: 1px solid #000;
+  border: 1px solid #000000;
   border-radius: 100px / 50px;
   box-shadow: 0 0 4px #000000 inset;
+}
+
+
+/* ! ------------Фонарь кабины Газ-66--------- */
+.lamp {
+  position: absolute;
+  top: 120px;
+  left: 270px;
+
+  width: 30px;
+  height: 50px;
+
+  background: #2e2c2c;
+  border: 1px solid #000;
+  border-left: 5px solid rgb(65, 63, 63);
+  border-top-right-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  box-shadow: 0 20px 10px #8b8888 inset;
+  z-index: 3;
+}
+
+.lamp::after {
+  content:"";
+
+  position: absolute;
+  top: 48px;
+  left: 5px;
+
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+
+  background: #161515;
+  box-shadow: 0 20px 10px #444444 inset;
 }
