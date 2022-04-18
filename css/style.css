@@ -195,9 +195,216 @@ body {
 /* ! --------------ИМЯ-БЛОКА------------------ */
 .main {
   min-height: 400vh;
-  margin: 0 auto;
   padding: 50px 0px 100px 0px;
-  
+
   background: #cac8c8;
 }
 
+.container {
+  position: relative;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+
+/* ! --------------Кабина Газ-66--------------- */
+.cabine-top{
+  height: 0;
+  width: 240px;
+
+  border-bottom: 120px solid #26614c;
+  border-left: 50px solid transparent;
+  border-right: 10px solid transparent;
+
+  border-top-right-radius: 30px;
+  border-top-left-radius: 150px 50px;
+}
+
+.cabine-bottom {
+  position: absolute;
+  left: -50px;
+  top: 110px;
+
+  width: 300px;
+  height: 210px;
+
+  background: #26614c;;
+  border-top-left-radius: 150px 35px;
+  border-top-right-radius: 10px 80px;
+  border-bottom-right-radius: 10px 10px;
+  border-bottom-left-radius: 5px 5px;
+  box-shadow: 0 3px 12px #ffffff inset;
+}
+
+
+/* ! -----------Крыло кабины Газ-66----------- */
+.cabine-wing {
+  position: absolute;
+  top: 280px;
+  left: 40px;
+
+  width: 145px;
+  height: 10px;
+  
+  background: transparent;
+  border: 2px solid #454545;
+  box-shadow: 0 0 20px 0px #000, 0 0 2px #ffffff inset;
+}
+
+.cabine-wing::before {
+  position: absolute;
+  top: 15px;
+  left: -45px;
+
+  content:"";
+  display: inline-block;
+  width: 52px;
+  height: 7px;
+
+  background: transparent;
+  border: 2px solid #454545;
+  box-shadow: 0 0 20px 0px #000,
+  0 0 2px #ffffff inset;
+
+  transform: rotate(142deg);
+}
+.cabine-wing::after {
+  position: absolute;
+  top: 15px;
+  left: 134px;
+
+  content:"";
+  display: inline-block;
+  width: 52px;
+  height: 7px;
+
+  background: transparent;
+  border: 2px solid #454545;
+  box-shadow: 0 0 20px 0px #000,
+  0 0 2px #ffffff inset;
+
+  transform: rotate(-142deg);
+}
+
+.cabine-bottom__item {
+  position: absolute;
+  top: 280px;
+
+  height: 0;
+  width: 230px;
+
+  border-bottom: 40px solid #494949;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+
+
+/* ! --------------Окна кабины Газ-66-------- */
+.cabine-window-front {
+  position: absolute;
+  top: 65px;
+  left: -24px;
+
+  width: 103px;
+  height: 15px;
+
+  background: #ffffff;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 30px;
+  box-shadow: 0 0 7px rgb(29, 28, 28) inset;
+
+  transform: rotate(-67deg);
+}
+
+.cabine-window-side {
+  position: absolute;
+  top: 35px;
+  left: 50px;
+
+  width: 130px;
+  height: 85px;
+
+  background: #ffffff;
+  border-top-left-radius: 90px 150px;
+  box-shadow: -7px 0 20px 3px rgb(20, 19, 19) inset;
+}
+
+.partition-window-side {
+  position: absolute;
+  top: 35px;
+  left: 95px;
+
+  width: 10px;
+  height: 85px;
+
+  background: #000000;
+  box-shadow: 0 -3px 8px #ffffff inset;
+}
+
+
+/* ! --------------Дверь кабины Газ-66--------- */
+.cabine-door {
+  position: absolute;
+  top: 20px;
+  left: 27px;
+
+  width: 165px;
+  height: 255px;
+
+  background: transparent;
+  border: 4px solid #494949;
+  border-top-left-radius: 70px 150px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0 15px #979494 inset;
+}
+
+.mirror-door-cabine {
+  position: absolute;
+  top: 95px;
+  left: 260px;
+
+  width: 25px;
+  height: 65px;
+
+  background: #000000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 0 10px #ffffff inset;
+
+  transform: rotate(3deg) skewX(-7deg);
+}
+
+.decor-door-cabine {
+  position: absolute;
+  top: 230px;
+  left: 260px;
+
+  width: 120px;
+  height: 75px;
+
+  background: transparent;
+  border: 3px solid #494949;
+  border-bottom: 1px solid rgb(153, 147, 147);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: -8px 0 25px 0 #424040 inset;
+}
+
+.cabin-door-handle {
+  position: absolute;
+  top: 235px;
+  left: 340px;
+
+  width: 35px;
+  height: 10px;
+  
+  background: #ffffff;
+  border: 1px solid #000;
+  border-radius: 100px / 50px;
+  box-shadow: 0 0 4px #000000 inset;
+}
